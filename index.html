@@ -285,7 +285,10 @@
 			///// Begin intro section /////
 			=========================== -->
       <section id="tt-intro" class="video-intro">
-        <div class="tt-intro-inner full-height-vh bg-dark tt-wrap">
+        <div
+          id="tt-intro-inner"
+          class="tt-intro-inner full-height-vh bg-dark tt-wrap"
+        >
           <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
           <!-- Element cover -->
@@ -319,7 +322,7 @@
             <!-- /.youtube-bg -->
             <div
               id="container"
-              style="width: 100%; height: 100%; overflow: hidden"
+              style="width: 100%; height: 100%; overflow: hidden; display: none"
             >
               <br />Loading...<br /><br />
             </div>
@@ -372,6 +375,56 @@
             </div>
           </div>
           <!-- End intro caption -->
+
+          <div class="intro-footer">
+            <div class="intro-footer__phone">
+              <p class="intro-phone__period">24/7 Instant Text Response</p>
+              <p class="intro-phone-num">949-732-8555</p>
+            </div>
+
+            <div style="flex: 1"></div>
+
+            <button class="btn-enter-web3" onclick="onEnterWeb3()">
+              Enter Web 3.0
+            </button>
+            <button class="btn-exit-web3" onclick="onExitWeb3()">
+              Exit Web 3.0
+            </button>
+
+            <div style="flex: 1"></div>
+
+            <div class="social-buttons">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/thomason360.com.official"
+                    class="btn btn-social-min btn-default btn-rounded-full"
+                    title="Follow me on Instagram"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.pinterest.com/ThomasOn360vr"
+                    class="btn btn-social-min btn-default btn-rounded-full"
+                    title="Follow me on Pinterest"
+                    target="_blank"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn btn-social-min btn-default btn-rounded-full"
+                    title="Follow me on Envelope"
+                    target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- /.tt-intro-inner -->
       </section>
@@ -4737,6 +4790,33 @@
           return false;
         }); // left menu link2 click() scroll END
       });
+
+      function onEnterWeb3() {
+        $("#header").hide();
+        $(".intro-caption").hide();
+        $(".intro-footer .social-buttons").hide();
+        $(".intro-footer__phone").hide();
+        $("#container").css("display", "block");
+        $(".intro-footer").css("height", "95px");
+        $(".btn-enter-web3").hide();
+        $(".btn-exit-web3").show();
+        $("#body").css("padding-top", 0);
+        $("#tt-intro-inner").css("height", "100vh");
+      }
+
+      function onExitWeb3() {
+        $("#container").css("diplay", "none");
+        $("#header").show();
+        $(".intro-caption").show();
+        $(".intro-footer").css("height", "");
+        $("#tt-intro-inner").css("height", "");
+        $(".intro-footer .social-buttons").show();
+        $(".intro-footer__phone").show();
+        $("#body").css("padding-top", 82.5);
+        $(".btn-enter-web3").show();
+        $(".btn-exit-web3").hide();
+        $("#tt-intro-inner").css("min-height", "calc(100vh - 82px) !important");
+      }
     </script>
   </body>
 </html>
