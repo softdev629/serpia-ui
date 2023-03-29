@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<!--
+   Template:   Sepia - Photography Portfolio HTML Website Template
+   Author:     Themetorium
+   URL:        https://themetorium.net  
+-->
+
+<html lang="en">
+	<head>
+
+		<!-- Title -->
+		<title>Interactive Virtual Reality + 3D Visualization with 24-hour Express Service</title>
+
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Responsive Photography HTML5 Website Template">
+		<meta name="keywords" content="HTML5, CSS3, Bootsrtrap, Responsive, Photography, Portfolio, Template, Theme, Website, Themetorium" />
+		<meta name="author" content="themetorium.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		
+		<!-- Favicon (http://www.favicon-generator.org/) -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!-- Google Analytics (https://analytics.google.com/) -->
+		<!-- Add your Google Analytics code here -->
+
+		<!-- Google fonts (https://www.google.com/fonts) -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> <!-- Global font -->
+
+		<!-- Bootstrap CSS (http://getbootstrap.com) -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"> <!-- bootstrap CSS (http://getbootstrap.com) -->
+
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="assets/vendor/animsition/css/animsition.min.css"> <!-- Animsition CSS (http://git.blivesta.com/animsition/) -->
+		<link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+		<link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+		<link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.min.css"> <!-- Owl Carousel CSS (https://owlcarousel2.github.io/OwlCarousel2/) -->
+		<link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.theme.default.min.css"> <!-- Owl Carousel CSS (https://owlcarousel2.github.io/OwlCarousel2/) -->
+		<link rel="stylesheet" href="assets/vendor/ytplayer/css/jquery.mb.YTPlayer.min.css"> <!-- YTPlayer CSS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
+
+		<!-- Template master CSS -->
+		<link rel="stylesheet" href="assets/css/helper.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+
+		<!-- Template dark style CSS (just uncomment line below to enable dark style) -->
+			<link rel="stylesheet" href="assets/css/dark-style.css">
+
+		<!-- Template round style CSS (just uncomment line below to enable round style) -->
+			<!-- <link rel="stylesheet" href="assets/css/round-style.css"> -->
+
+		<!-- Template color skins CSS (just uncomment line below to enable color skin. One line at a time!) -->
+			<!-- <link rel="stylesheet" href="assets/css/color-skins/skin-red.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/color-skins/skin-green.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/color-skins/skin-blue.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/color-skins/skin-orange.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/color-skins/skin-purple.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/color-skins/skin-pink.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/color-skins/skin-brown.css"> -->
+
+		<!-- Template RTL mode CSS (just uncomment all 3 lines below to enable right to left mode) -->
+			<!-- <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-rtl/bootstrap-rtl.min.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/rtl/theme-rtl.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/rtl/helper-rtl.css"> -->
+
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<!-- ===========
+	///// Body /////
+	================
+	* Use class "animsition" to enable page transition while page loads.
+	* Use class "tt-boxed" to enable page boxed layout globally (affects all elements containing class "tt-wrap").
+	-->
+	<body id="body" class="animsition">
+		<script type="text/javascript" src="./home/pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="./home/skin.js">
+		</script>
+		<script src="./home/webxr/three.min.js"></script>
+		<script src="./home/webxr/webxr-polyfill.min.js"></script>
+		<!-- =================
+		//// Begin header //// 
+		======================
+		* Use class "header-show-hide-on-scroll" to hide header on scroll down and show on scroll up.
+		* Use class "header-fixed-top" to set header to fixed position.
+		* Use class "header-transparent" to set header to transparent.
+		* Use class "menu-align-left" to align menu to left.
+		* Use class "menu-align-right" to align menu to right.
+		* Use class "menu-align-center" to align menu to center (do not use with header classes!).
+		-->
+		<header id="header" class="header-transparent menu-align-right">
+
+			<!-- Begin header inner -->
+			<div class="header-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+				<!-- Begin logo 
+				================ -->
+				<div id="logo">
+					<a href="index.html" class="logo-dark"><img src="assets/img/logo-dark.png" alt="logo"></a>
+					<a href="index.html" class="logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
+
+					<!-- for small screens -->
+					<a href="index.html" class="logo-dark-m"><img src="assets/img/logo-dark-m.png" alt="logo"></a>
+					<a href="index.html" class="logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
+				</div>
+				<!-- End logo -->
+
+				<!-- ====================
+				//// Begin main menu ////
+				===================== -->
+				<nav class="tt-main-menu">
+
+					<!-- Begin mobile menu toggle button -->
+					<div id="tt-m-menu-toggle-btn">
+						<span></span>
+					</div>
+					<!-- End mobile menu toggle button -->
+
+					<!-- Begin menu tools 
+					====================== -->
+					
+					<!-- End menu tools -->
+
+					<!-- Collect the nav links for toggling 
+					========================================
+					* Use class "tt-submenu-dark" to enable submenu dark style.
+					-->
+					<div class="tt-menu-collapse tt-submenu-dark">
+						<ul class="tt-menu-nav">
+
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="home-intro-video-full-screen.html">Home</a>
+							</li>
+							<!-- End submenu (sub-master) -->
+
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="about-me-fluid.html">About</a>
+							</li>
+							<!-- End submenu (sub-master) -->
+
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="albums-grid-fluid-2.html?t=0" class="tt-submenu-portfolio" style="display: inline-block;">Portfolio</a>
+								<span class="tt-caret"></span>
+								<ul class="tt-submenu">
+
+									<!-- Begin submenu
+									=================== -->
+									<li class="tt-submenu-wrap">
+										<a href="albums-grid-fluid-2.html?t=1">Architecture</a>
+									</li>
+									<!-- End submenu -->
+
+									<!-- Begin submenu
+									=================== -->
+									<li class="tt-submenu-wrap">
+										<a href="albums-grid-fluid-2.html?t=2">Interior</a>
+									</li>
+									<!-- End submenu -->
+
+									<!-- Begin submenu
+									=================== -->
+									<li class="tt-submenu-wrap">
+										<a href="albums-grid-fluid-2.html?t=3">Hospitality</a>
+									</li>
+									<!-- End submenu -->
+
+									<!-- Begin submenu
+									=================== -->
+									<li class="tt-submenu-wrap">
+										<a href="albums-grid-fluid-2.html?t=4">Hand Renderings</a>
+									</li>
+									<!-- End submenu -->
+
+								</ul> <!-- /.tt-submenu -->
+							</li>
+							<!-- End submenu (sub-master) -->
+
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="albums-grid-2.html?t=0" class="tt-submenu-Animation" style="display: inline-block;">VR/AR/Animation</a>
+								<span class="tt-caret"></span>
+								<ul class="tt-submenu">
+
+									<!-- Begin submenu
+									=================== -->
+									<li class="tt-submenu-wrap">
+										<a href="albums-grid-2.html?t=1">Animation</a>
+									</li>
+									<!-- End submenu -->
+
+									<!-- Begin submenu
+									=================== -->
+									<li class="tt-submenu-wrap">
+										<a href="albums-grid-2.html?t=2">Virtual Reality</a>
+									</li>
+									<!-- End submenu -->
+
+									<!-- Begin submenu
+									=================== -->
+									<li class="tt-submenu-wrap">
+										<a href="albums-grid-2.html?t=3">Augmented Reality</a>
+									</li>
+									<!-- End submenu -->
+
+								</ul> <!-- /.tt-submenu -->
+							</li>
+							<!-- End submenu (sub-master) -->
+
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="marketing.html">Marketing</a>
+							</li>
+							<!-- End submenu (sub-master) -->
+
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="web 3.0.html">Web 3.0</a>
+							</li>
+							<!-- End submenu (sub-master) -->
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="blog-list-grid-fluid.html">Testimonies</a>
+							</li>
+							<!-- End submenu (sub-master) -->
+
+							<!-- Begin submenu (submenu master)
+							==================================== -->
+							<li class="tt-submenu-wrap tt-submenu-master">
+								<a href="contact-fluid.html">Contact</a>
+							</li>
+							<!-- End submenu (sub-master) -->
+
+						</ul> <!-- /.tt-menu-nav -->
+					</div> <!-- /.tt-menu-collapse -->
+
+				</nav> 
+				<!-- End main menu -->
+
+			</div>
+			<!-- End header inner -->
+
+		</header>
+		<!-- End header -->
+
+
+		<!-- *************************************
+		*********** Begin body content *********** 
+		************************************** -->
+		<div id="body-content">
+
+
+			<!-- ==========================
+			///// Begin intro section /////
+			=========================== -->
+			<section id="tt-intro" class="video-intro">
+				<div class="tt-intro-inner full-height-vh bg-dark tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+					<!-- Element cover -->
+					<div class="cover bg-transparent-3-dark"></div>
+						
+					<!-- Begin YTPlayer (Youtube video background)
+					===============================================
+					* NOTE: Replace videoURL with your own (videoURL:'your-youtube-video-URL'). 
+					* Do not forget to add your background image for mobile devices (because the video background doesn't work on mobile devices).
+					* YTPlayer may not work in the local computer. It works properly only if used under a web server.
+					* More info about YTPlayer: https://github.com/pupunzi/jquery.mb.YTPlayer 
+					-->
+					<div class="youtube-bg-wrap ytp-full"> <!-- Class "ytp-full" is for full cover (depend on parent element size). -->
+						<!-- <div class="youtube-bg" 
+							style="background-position: 50% 50%;"
+							data-property="{
+								videoURL: 'https://youtu.be/6_g8FrzsMzw',
+								containment: 'self',
+								quality: 'default',
+								startAt: 0,
+								stopAt: 0,
+								autoPlay: true,
+								loop: true,
+								mute: true,
+								showControls: false,
+								showYTLogo: false,
+								realfullscreen: true,
+								addRaster: false,
+								optimizeDisplay: true,
+								stopMovieOnBlur: true
+							}">
+						</div> -->
+						<div id="container" style="width:100%;height:100%;overflow:hidden;">
+							<br>Loading...<br><br>
+						</div>
+					</div>
+					<!-- End YTPlayer (Youtube video background) -->
+
+					<!-- Begin intro caption 
+					=========================
+					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+					* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
+					-->
+					<div class="intro-caption caption-animate intro-caption-xxlg center-left">
+						<h1 class="intro-title" style="font-size: 50px;">Unlimited Revisions + Satisfaction Guaranteed</h1>
+						<!-- <h2 class="intro-subtitle">Unlimited Revisions + Satisfaction Guaranteed</h2> -->
+
+						<p class="intro-description">
+							Thomason360 Inc. specialize in 3D design, visualization and experienced-based marketing that utilize cutting-edge VR/AR technology and Web 3.0 semantic technology to harness the power of imagination!
+						</p>
+
+						<div class="margin-top-30">
+							<a href="albums-grid-fluid-2.html" class="btn btn-primary margin-top-5 margin-right-10" >3D Visualization</a> 
+							<a href="marketing.html" class="btn btn-primary margin-top-5 margin-right-10" >Marketing</a> 
+							<a href="web 3.0.html" class="btn btn-primary margin-top-5 margin-right-10" >Web 3.0</a>
+							<a href="web 3.0.html" class="btn btn-primary margin-top-5 margin-right-10" >Branding</a> 
+							<!-- <a href="albums-carousel.html" class="btn btn-white-bordered margin-top-5">Discover More</a> -->
+							<!-- https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium -->
+						</div>
+					</div>
+					<!-- End intro caption -->
+
+				</div> <!-- /.tt-intro-inner -->
+			</section>
+			<!-- End intro section -->
+
+
+			<!-- ============================================
+			///// Begin footer section (footer minimal) /////
+			=================================================
+			* Use class "footer-dark" to enable dark footer.
+			* Use class "no-margin-top" if needed. 
+			-->
+			<section id="footer" class="footer-minimal no-margin-top bg-transparent">
+				<div class="footer-inner">
+					<div class="footer-container tt-wrap">
+						<div class="row">
+							<div class="col-md-6 col-md-push-6">
+
+								<!-- Begin social buttons -->
+								<div class="social-buttons">
+									<ul>
+										<li>
+											<a href="https://www.instagram.com/thomason360.com.official"
+											  class="btn btn-social-min btn-default btn-rounded-full" title="Follow me on Instagram"
+											  target="_blank"><i class="fab fa-instagram"></i></a>
+										  </li>
+										  <li>
+											<a href="https://www.pinterest.com/ThomasOn360vr" class="btn btn-social-min btn-default btn-rounded-full"
+											  title="Follow me on Pinterest" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+										</li>
+									</ul>
+								</div>
+								<!-- End social buttons -->
+
+							</div> <!-- /.col -->
+
+							<div class="col-md-6 col-md-pull-6">
+
+								<!-- Begin footer copyright -->
+								<div class="footer-copyright">
+									<p>&copy; ALL RIGHT RESERVED BY THOMASON360 Inc. | <p id="footer__yearUpdate"></p>
+          							</p>
+								</div>
+								<!-- End footer copyright -->
+
+							</div> <!-- /.col -->
+						</div> <!-- /.row -->
+					</div> <!-- /.footer-container -->
+				</div> <!-- /.footer-inner -->
+			</section>
+			<!-- End footer section -->
+
+		</div>
+		<!-- End body content -->
+
+		</div>
+		<!-- End body content -->
+
+
+
+        
+
+		<!-- ====================
+		///// Scripts below /////
+		===================== -->
+
+		<!-- Core JS -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script> <!-- bootstrap JS (http://getbootstrap.com) -->
+
+		<!-- Libs and Plugins JS -->
+		<script src="assets/vendor/animsition/js/animsition.min.js"></script> <!-- Animsition JS (http://git.blivesta.com/animsition/) -->
+		<script src="assets/vendor/jquery.easing.min.js"></script> <!-- Easing JS (http://gsgd.co.uk/sandbox/jquery/easing/) -->
+		<script src="assets/vendor/isotope.pkgd.min.js"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+		<script src="assets/vendor/imagesloaded.pkgd.min.js"></script> <!-- ImagesLoaded JS (https://github.com/desandro/imagesloaded) -->
+		<script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel JS (https://owlcarousel2.github.io/OwlCarousel2/) -->
+		<script src="assets/vendor/jquery.mousewheel.min.js"></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+		<script src="assets/vendor/ytplayer/js/jquery.mb.YTPlayer.min.js"></script> <!-- YTPlayer JS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
+
+		<script src="assets/vendor/lightgallery/js/lightgallery-all.min.js"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+		
+		<!-- Theme master JS -->
+		<script src="assets/js/theme.js"></script>
+
+		<script type="text/javascript">
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+		
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("./home/pano.xml");
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				// declare variable
+		
+				//console.log("year", year);
+				$("#footer__yearUpdate").html(function () {
+				var date = new Date();
+				var year = date.getFullYear();
+				return year;
+				});
+			});
+		</script>
+		
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+		<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s --> 
+		<div style="width:1px;height:1px;"></div>
+	</body>
+
+</html>
