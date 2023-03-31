@@ -174,7 +174,7 @@
         <nav class="tt-main-menu">
           <!-- Begin mobile menu toggle button -->
           <div id="tt-m-menu-toggle-btn">
-            <img src="./assets/img/five-star.png" />
+            <img src="./assets/img/four-star.png" />
           </div>
           <!-- End mobile menu toggle button -->
 
@@ -290,7 +290,7 @@
           class="tt-intro-inner full-height-vh bg-dark tt-wrap"
         >
           <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-
+          <div class="temporary-layer"></div>
           <!-- Element cover -->
           <div class="cover bg-transparent-3-dark"></div>
 
@@ -322,7 +322,7 @@
             <!-- /.youtube-bg -->
             <div
               id="container"
-              style="width: 100%; height: 100%; overflow: hidden; display: none"
+              style="width: 100%; height: 100%; overflow: hidden"
             >
               <br />Loading...<br /><br />
             </div>
@@ -387,9 +387,9 @@
             <button class="btn-enter-web3" onclick="onEnterWeb3()">
               Enter Web 3.0
             </button>
-            <button class="btn-exit-web3" onclick="onExitWeb3()">
+            <!-- <button class="btn-exit-web3" onclick="onExitWeb3()">
               Exit Web 3.0
-            </button>
+            </button> -->
 
             <div style="flex: 1"></div>
 
@@ -3419,7 +3419,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -3452,7 +3452,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -3487,7 +3487,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -3516,7 +3516,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4108,7 +4108,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4138,7 +4138,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4169,7 +4169,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4200,7 +4200,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4229,7 +4229,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4263,7 +4263,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4294,7 +4294,7 @@
                           </div>
 
                           <div class="bl-item-read-more" title="Read More">
-                            <img src="./assets/img/five-star.png" />
+                            <img src="./assets/img/four-star.png" />
                           </div>
 
                           <!-- End blog list item attributes -->
@@ -4794,28 +4794,26 @@
       function onEnterWeb3() {
         $("#header").hide();
         $(".intro-caption").hide();
-        $(".intro-footer .social-buttons").hide();
-        $(".intro-footer__phone").hide();
-        $("#container").css("display", "block");
-        $(".intro-footer").css("height", "95px");
-        $(".btn-enter-web3").hide();
-        $(".btn-exit-web3").show();
+        $(".intro-footer .social-buttons").css("visibility", "hidden");
+        $(".intro-footer__phone").css("visibility", "hidden");
+        $(".btn-enter-web3").html("Exit Web 3.0");
         $("#body").css("padding-top", 0);
         $("#tt-intro-inner").css("height", "100vh");
+        $(".btn-enter-web3").attr("onclick", "onExitWeb3()");
+        $(".temporary-layer").hide();
       }
 
       function onExitWeb3() {
-        $("#container").css("diplay", "none");
         $("#header").show();
         $(".intro-caption").show();
-        $(".intro-footer").css("height", "");
         $("#tt-intro-inner").css("height", "");
-        $(".intro-footer .social-buttons").show();
-        $(".intro-footer__phone").show();
+        $(".intro-footer .social-buttons").css("visibility", "visible");
+        $(".intro-footer__phone").css("visibility", "visible");
+        $(".btn-enter-web3").html("Enter Web 3.0");
         $("#body").css("padding-top", 82.5);
-        $(".btn-enter-web3").show();
-        $(".btn-exit-web3").hide();
         $("#tt-intro-inner").css("min-height", "calc(100vh - 82px) !important");
+        $(".btn-enter-web3").attr("onclick", "onEnterWeb3()");
+        $(".temporary-layer").show();
       }
     </script>
   </body>

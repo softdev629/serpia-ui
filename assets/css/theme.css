@@ -6629,12 +6629,13 @@ body.tt-boxed .blog-list-inner.tt-wrap {
 .bl-item-read-more {
 	position: absolute;
 	right: 20px;
-	bottom: 15px;
-	width: 32px;
+	bottom: 30px;
+	width: 70px;
 	height: 20px;
 	line-height: 16px;
 	text-align: center;
 }
+
 .bl-item-read-more span {
 	position: relative;
 }
@@ -10793,6 +10794,7 @@ body.tt-boxed #footer.footer-minimal .footer-container {
 	background-color: rgb(24, 24, 23);
 
 	align-items: center;
+	height: 100px;
 }
 
 .btn-enter-web3 {
@@ -10805,7 +10807,8 @@ body.tt-boxed #footer.footer-minimal .footer-container {
 	font-size: 20px;
 	background-position: center;
 	border: none;
-	padding: 10px 45px;
+	width: 250px;
+	height: 50px;
 }
 
 .intro-footer__phone p {
@@ -10841,4 +10844,13 @@ body.tt-boxed #footer.footer-minimal .footer-container {
 	border: none;
 	padding: 10px 45px;
 	display: none;	
+}
+
+.temporary-layer {
+	position: absolute;
+	z-index: 100;
+	height: calc(100% - 100px);
+	width: 100%;
+	top: 0;
+	left: 0;
 }
