@@ -10794,7 +10794,10 @@ body.tt-boxed #footer.footer-minimal .footer-container {
 	background-color: rgb(24, 24, 23);
 
 	align-items: center;
+	justify-content: space-between;
 	height:60px;
+
+	font-size: smaller;
 }
 
 .btn-enter-web3 {
@@ -10856,7 +10859,7 @@ body.tt-boxed #footer.footer-minimal .footer-container {
 .temporary-layer {
 	position: absolute;
 	z-index: 5;
-	height: calc(100% - 100px);
+	height: calc(100% - 60px);
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -10865,11 +10868,15 @@ body.tt-boxed #footer.footer-minimal .footer-container {
 .left-exp {
 	display: none;
 	align-items: center;
+	justify-content: space-between;
 	margin-left: 15px;
+	width: 40%;
 }
 
 .right-exp {
 	display: none;
 	align-items: center;
 	margin-right: 15px;
+	justify-content: space-between;
+	width: 40%;
 }

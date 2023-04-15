@@ -208,16 +208,16 @@
                 >
                 <ul class="tt-submenu">
                   <li class="tt-submenu-wrap">
-                    <a href="albums-grid-fluid-2.html?t=1">Interior</a>
+                    <a href="#" id="link-interior">Interior</a>
                   </li>
                   <li class="tt-submenu-wrap">
-                    <a href="albums-grid-fluid-2.html?t=2">Architecture</a>
+                    <a id="link-architecture">Architecture</a>
                   </li>
                   <li class="tt-submenu-wrap">
-                    <a href="albums-grid-fluid-2.html?t=3">Hospitality</a>
+                    <a id="link-hospitality">Hospitality</a>
                   </li>
                   <li class="tt-submenu-wrap">
-                    <a href="albums-grid-fluid-2.html?t=4">Hand Renderings</a>
+                    <a id="link-handrenderings">Hand Renderings</a>
                   </li>
                 </ul>
               </li>
@@ -231,10 +231,13 @@
                 >
                 <ul class="tt-submenu">
                   <li class="tt-submenu-wrap">
-                    <a href="#animation" class="animation">360 VR</a>
+                    <a>Animation</a>
                   </li>
                   <li class="tt-submenu-wrap">
-                    <a href="index-animation.html">AR/Animation</a>
+                    <a>Vitual Reality</a>
+                  </li>
+                  <li class="tt-submenu-wrap">
+                    <a>Argumented Reality</a>
                   </li>
                 </ul>
               </li>
@@ -407,15 +410,16 @@
               </p>
             </div>
 
-            <div style="flex: 1"></div>
+            <div
+              id="footer-space-spec"
+              style="width: 200px; display: none"
+            ></div>
 
             <button
               id="btn-web3"
               class="btn-enter-web3"
               onclick="onEnterWeb3()"
             ></button>
-
-            <div style="flex: 1"></div>
 
             <div class="right-exp">
               <img src="./assets/img/Icon_Zoom.png" width="40" height="40" />
@@ -1023,16 +1027,31 @@
                     <a href="#" class="active" data-filter="*">Show All</a>
                   </li>
                   <li>
-                    <a href="#" data-filter=".interior">Interior</a>
+                    <a href="#" data-filter=".interior" id="filter-interior"
+                      >Interior</a
+                    >
                   </li>
                   <li>
-                    <a href="#" data-filter=".architecture">Architecture</a>
+                    <a
+                      href="#"
+                      data-filter=".architecture"
+                      id="filter-architecture"
+                      >Architecture</a
+                    >
                   </li>
                   <li>
-                    <a href="#" data-filter=".hospitality">Hospitality</a>
+                    <a
+                      href="#"
+                      data-filter=".hospitality"
+                      id="filter-hospitality"
+                      >Hospitality</a
+                    >
                   </li>
                   <li>
-                    <a href="#" data-filter=".hand-renderings"
+                    <a
+                      href="#"
+                      data-filter=".hand-renderings"
+                      id="filter-handrenderings"
                       >Hand Renderings</a
                     >
                   </li>
@@ -4876,13 +4895,63 @@
           );
           return false;
         }); // left menu link2 click() scroll END
+
+        $("#link-interior").click(() => {
+          event.preventDefault();
+          // let $container = $(".isotope-items-wrap.lightgallery.gsi-color");
+          // $container.isotope({
+          //   filter: ".interior",
+          // });
+          $("#filter-interior")[0].click();
+          // $("html, body").animate({
+          //   scrollTop: $("#portfolio .isotope-wrap").position().top,
+          // });
+          return false;
+        });
+
+        $("#link-architecture").click(() => {
+          event.preventDefault();
+          // let $container = $(".isotope-items-wrap.lightgallery.gsi-color");
+          // $container.isotope({
+          //   filter: ".architecture",
+          // });
+          $("#filter-architecture")[0].click();
+          // $("html, body").animate({
+          //   scrollTop: $("#portfolio .isotope-wrap").position().top,
+          // });
+          return false;
+        });
+
+        $("#link-hospitality").click(() => {
+          event.preventDefault();
+          // let $container = $(".isotope-items-wrap.lightgallery.gsi-color");
+          // $container.isotope({
+          //   filter: ".hospitality",
+          // });
+          $("#filter-hospitality")[0].click();
+          // $("html, body").animate({
+          //   scrollTop: $("#portfolio .isotope-wrap").position().top,
+          // });
+          return false;
+        });
+
+        $("#link-handrenderings").click(() => {
+          event.preventDefault();
+          // let $container = $(".isotope-items-wrap.lightgallery.gsi-color");
+          // $container.isotope({
+          //   filter: ".hand-renderings",
+          // });
+          $("#filter-handrenderings")[0].click();
+          // $("html, body").animate({
+          //   scrollTop: $("#portfolio .isotope-wrap").position().top,
+          // });
+          return false;
+        });
       });
 
       function onEnterWeb3() {
         $("#header").hide();
         $(".intro-caption").hide();
-        // $(".intro-footer .social-buttons").css("visibility", "hidden");
-        // $(".intro-footer__phone").css("visibility", "hidden");
         $(".intro-footer .social-buttons").hide();
         $(".intro-footer__phone").hide();
         $(".left-exp").css("display", "flex");
@@ -4892,6 +4961,7 @@
         $("#btn-web3").removeClass("btn-enter-web3");
         $("#btn-web3").addClass("btn-exit-web3");
         $("#btn-web3").attr("onclick", "onExitWeb3()");
+        $("#footer-space-spec").show();
         $(".temporary-layer").hide();
         $(".bg-transparent-3-dark").hide();
       }
@@ -4900,8 +4970,6 @@
         $("#header").show();
         $(".intro-caption").show();
         $("#tt-intro-inner").css("height", "");
-        // $(".intro-footer .social-buttons").css("visibility", "visible");
-        // $(".intro-footer__phone").css("visibility", "visible");
         $(".intro-footer .social-buttons").show();
         $(".intro-footer__phone").show();
         $(".left-exp").css("display", "none");
@@ -4910,6 +4978,7 @@
         $("#tt-intro-inner").css("min-height", "calc(100vh - 82px) !important");
         $("#btn-web3").removeClass("btn-exit-web3");
         $("#btn-web3").addClass("btn-enter-web3");
+        $("#footer-space-spec").hide();
         $("#btn-web3").attr("onclick", "onEnterWeb3()");
         $(".temporary-layer").show();
         $(".bg-transparent-3-dark").show();
