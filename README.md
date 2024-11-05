@@ -92,4 +92,3 @@ For questions or feedback, please contact Bohdan at vuongtpv@gmail.com.
 ---
 
 Thank you for visiting our VR/AR Website project! We hope you enjoy exploring the virtual and augmented worlds we've created.
-```
